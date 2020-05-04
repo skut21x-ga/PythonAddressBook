@@ -9,7 +9,7 @@ class BaseModel(Model):
         database = db
 
 
-class Contact(BaseModel):
+class contacts(BaseModel):
     first_name = CharField()
     last_name = CharField()
     area_code = IntegerField()
@@ -86,3 +86,6 @@ def search():
         print(
             f' Name: {contact.first_name} {contact.last_name} : {area_code}-{phone_number}')
         search()
+
+
+start()
