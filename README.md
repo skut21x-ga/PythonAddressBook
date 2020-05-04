@@ -43,3 +43,7 @@ type \c contacts
 type 'python3 main.py' into command line
 
 ##### Type 'exit' anytime to quit
+
+##### Resources
+
+http://patorjk.com/software/taag/ Used for Ascii ART
