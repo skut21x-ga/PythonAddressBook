@@ -1,11 +1,8 @@
 ### Python Address Book 
-#
-#### Author
-
-[Scott Kutler](scott.kutler@gmail.com)
+#### Author: [Scott Kutler](scott.kutler@gmail.com)
 #
 
-### Screenshot
+#### Screenshot
 ![Screenshot](https://github.com/skut21x-ga/PythonAddressBook/blob/master/shot.png?raw=true)
 #
 
