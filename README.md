@@ -1,4 +1,4 @@
-### Address Book in Python / SQL
+### Address Book
 
 #### Author
 
@@ -28,15 +28,15 @@ type 'pipenv shell' into command line
 
 ##### Open PSQL to create a DB (?)
 
-In a seperate terminal window type 'psql'
+In a seperate terminal tab/window type 'psql'
 
 ##### Create a Database in PSQL (?)
 
 type 'CREATE DATABASE contacts;'
 
-#### Connect to Contacts DB (?)
+#### Connect to new contacts DB (?)
 
-type \c contacts
+type '\c contacts;'
 
 ##### Back in the PIPENV SHELL, Run the Address Book program
 
