@@ -1,4 +1,4 @@
-### Address Book
+### Python Address Book 
 #
 #### Author
 
@@ -6,7 +6,7 @@
 #
 #### Function:
 
-This app serves as a Contact Book with users able to create new contacts, see contacts in the address book, and also search contact by first or last name.
+This app serves as a Contact Book with users able to create new contacts and also search contact by first name.
 #
 #### Technology Stacks used:
 
@@ -45,6 +45,7 @@ type 'python3 main.py' into command line
 ##### 9. Type 'exit' anytime to quit
 #
 ##### Screenshot
+![Screenshot](https://github.com/skut21x-ga/PythonAddressBook/blob/master/shot.png?raw=true)
 #
 ##### Resources
 
