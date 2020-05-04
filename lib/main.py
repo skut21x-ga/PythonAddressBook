@@ -70,9 +70,17 @@ def create():
     print('------- ADD NEW CONTACT --------')
     print('')
     new_first = input('First Name: ')
+    while new_first == "":
+        new_first = input('Please enter valid First Name: ')
     new_last = input('Last Name: ')
+    while new_last == "":
+        new_last = input('Please enter valid Last Name:  ')
     new_areacode = input('Area Code: ')
+    while new_areacode == "":
+        new_areacode = input('Please enter a valid 3 digit areacode: ')
     new_phonenumber = input('Phone Number (7 Digits): ')
+    while new_phonenumber == "":
+        new_phonenumber = input('Please enter a valid 7 digit phone number:')
 
     new_contact = contacts(
         first_name=new_first,
@@ -88,18 +96,15 @@ def create():
 
 
 def search():
-    contacts = contacts.select()
-    for contact in contacts:
-        print(contact.first_name)
-    print('Please type full first name')
+    print("")
+    print('   Please type first name to search for (or EXIT to quit)')
     search = input()
     if search == 'EXIT':
         start()
-    elif search == 'contacts.first_name':
-        contacts.get('Contact.first_name')
+    elif contacts.get('contacts.first_name' == search):
         print(
-            f' Name: {contact.first_name} {contact.last_name} : {area_code}-{phone_number}')
-        search()
+            f' Name: {contacts.first_name} {contacts.last_name} : {contacts.area_code}-{contacts.phone_number}')
+    search()
 
 
 start()
