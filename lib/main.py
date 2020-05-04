@@ -36,7 +36,6 @@ roger.save()
 def start():
     print('')
     print('')
-    print('')
     print("                   Scott Kutler's ")
     print('    ___     ____   ____   ____   ______ _____ _____  ')
     print('   /   |   / __ \ / __ \ / __ \ / ____// ___// ___/  ')
@@ -72,7 +71,7 @@ def create():
     print('')
     new_first = input('First Name: ')
     new_last = input('Last Name: ')
-    new_areacode = input('Area Code): ')
+    new_areacode = input('Area Code: ')
     new_phonenumber = input('Phone Number (7 Digits): ')
 
     new_contact = contacts(
@@ -84,8 +83,7 @@ def create():
 
     new_contact.save()
     print('')
-    print('-------- CONTACT SAVED ---------')
-    print('')
+    print('------------ NEW CONTACT SAVED! -------------')
     start()
 
 
