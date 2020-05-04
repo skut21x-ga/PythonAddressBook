@@ -4,6 +4,11 @@
 
 [Scott Kutler](scott.kutler@gmail.com)
 #
+
+### Screenshot
+![Screenshot](https://github.com/skut21x-ga/PythonAddressBook/blob/master/shot.png?raw=true)
+#
+
 #### Function:
 
 This app serves as a Contact Book with users able to create new contacts and also search contact by first name.
@@ -44,9 +49,7 @@ type 'python3 main.py' into command line
 
 ##### 9. Type 'exit' anytime to quit
 #
-##### Screenshot
-![Screenshot](https://github.com/skut21x-ga/PythonAddressBook/blob/master/shot.png?raw=true)
-#
+
 ##### Resources
 
 http://patorjk.com/software/taag/ Used for Ascii ART
