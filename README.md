@@ -18,29 +18,27 @@ Python, SQL, and PeeWee
 
 ##### - On the command line, CD into the lib folder in the root directory for this repo
 
-##### - You will need to create a new database called address_book and load the provided data in contacts from it. To do so:
+##### Install peewee If it's not installed:
 
-##### Enter psql:
-
-type 'psql' into command line
-
-##### Create database:
-
-type 'CREATE DATABASE address_book;' into command line
-
-##### Connect to the address_book db to seed it:
-
-type '\c address_book;' into command line
-
-##### Then load the contacts.sql file to seed the db:
-
-type '\i contacts.sql;' into command line
+pipenv install peewee psycopg2 autopep8
 
 ##### Start your command line Virtual Environment:
 
 type 'pipenv shell' into command line
 
-##### Run the python program
+##### Open PSQL to create a DB
+
+In a seperate terminal window type 'psql'
+
+##### Create a Database in PSQL:
+
+type 'CREATE DATABASE contacts;'
+
+#### Connect to Contacts DB:
+
+type \c contacts
+
+##### Back in the PIPENV SHELL, Run the Address Book program
 
 type 'python3 main.py' into command line
 
