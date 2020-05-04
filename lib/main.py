@@ -101,10 +101,10 @@ def search():
     search = input()
     if search == 'EXIT':
         start()
-    elif contacts.get('contacts.first_name' == search):
+    else:
+        results = contacts.get(contacts.first_name == search)
         print(
-            f' Name: {contacts.first_name} {contacts.last_name} : {contacts.area_code}-{contacts.phone_number}')
-    search()
+            f' Name: {results.first_name} {results.last_name} : {results.area_code}-{results.phone_number}')
 
 
 start()
