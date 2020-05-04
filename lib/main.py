@@ -17,17 +17,19 @@ class Contact(BaseModel):
 
 
 db.connect()
-db.drop_tables([Contact])
-db.create_tables([Contact])
+# db.drop_tables([contacts])
+db.create_tables([contacts])
 
-scott = Contact(first_name='Scott', last_name='Kutler',
-                area_code=469, phone_number=3870895)
+scott = contacts(first_name='Scott', last_name='Kutler',
+                 area_code=469, phone_number=3870895)
 scott.save()
-noah = Contact(first_name='Noah', last_name='Clark',
-               area_code=202, phone_number=5555555)
+
+noah = contacts(first_name='Noah', last_name='Clark',
+                area_code=202, phone_number=5555555)
 noah.save()
-roger = Contact(first_name='Roger', last_name='Campbell',
-                area_code=202, phone_number=5551234)
+
+roger = contacts(first_name='Roger', last_name='Campbell',
+                 area_code=202, phone_number=5551234)
 roger.save()
 
 
@@ -57,7 +59,7 @@ def create():
     new_areacode = input('Area Code): ')
     new_phonenumber = input('Phone Number (7 Digits): ')
 
-    new_contact = Contact(
+    new_contact = contacts(
         first_name=new_first,
         last_name=new_last,
         area_code=new_areacode,
@@ -72,15 +74,15 @@ def create():
 
 
 def search():
-    contacts = Contact.select()
+    contacts = contacts.select()
     for contact in contacts:
         print(contact.first_name)
     print('Please type full first name')
     search = input()
     if search == 'EXIT':
         start()
-    elif search == 'Contact.first_name':
-        Contact.get('Contact.first_name')
+    elif search == 'contacts.first_name':
+        contacts.get('Contact.first_name')
         print(
             f' Name: {contact.first_name} {contact.last_name} : {area_code}-{phone_number}')
         search()

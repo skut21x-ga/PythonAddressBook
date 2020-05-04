@@ -18,7 +18,7 @@ Python, SQL, and PeeWee
 
 ##### - On the command line, CD into the lib folder in the root directory for this repo
 
-##### Install peewee If it's not installed:
+##### Install peewee If it's not installed (?)
 
 pipenv install peewee psycopg2 autopep8
 
@@ -26,15 +26,15 @@ pipenv install peewee psycopg2 autopep8
 
 type 'pipenv shell' into command line
 
-##### Open PSQL to create a DB
+##### Open PSQL to create a DB (?)
 
 In a seperate terminal window type 'psql'
 
-##### Create a Database in PSQL:
+##### Create a Database in PSQL (?)
 
 type 'CREATE DATABASE contacts;'
 
-#### Connect to Contacts DB:
+#### Connect to Contacts DB (?)
 
 type \c contacts
 
